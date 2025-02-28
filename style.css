@@ -57,7 +57,7 @@ header {
 }
 .home {
     width: 100vw;
-    height: 700px;
+    /* height: 700px; */
     background-repeat: no-repeat;
     background-size: cover;
     /* background: url('./img/forest1.jpeg') center/cover; */
@@ -86,9 +86,7 @@ header {
     position: relative;
     z-index: 1;
 }
-.content div{
-    /* background-color: red; */
-}
+
 .homeTitle{
     position: relative;
     z-index: 2;
