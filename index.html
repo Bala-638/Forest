@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Tour</title>
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">🌳 FOREST</div>
+        <div class="nav">
+            <a href="#">Locations</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    
+    <div class="slider">
+        <div class="slides">
+            <section class="home" style="background-image: url(./img/forest1.jpeg);">
+        
+                <div class="overlay"></div>
+                <div class="inner">
+                    <div class="homeTitle">
+                        <h1>Top Forest Tours!</h1>
+                    </div>
+            
+                    <div class="content">
+                        <div>
+        
+                            <h2>Welcome to Consetetur Forest</h2>
+                            <a href="#tour" class="btn">Book a tour!</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+            </section>
+            <section class="home" style="background-image: url(./img/forest2.jpeg);">
+        
+                <div class="overlay"></div>
+                <div class="inner">
+                    <div class="homeTitle">
+                        <h1>Top Forest Tours!</h1>
+                    </div>
+            
+                    <div class="content">
+                        <div>
+        
+                            <h2>Welcome to Consetetur Forest</h2>
+                            <a href="#tour" class="btn">Book a tour!</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+            </section>
+            <section class="home" style="background-image: url(./img/forest3.jpeg);">
+        
+                <div class="overlay"></div>
+                <div class="inner">
+                    <div class="homeTitle">
+                        <h1>Top Forest Tours!</h1>
+                    </div>
+            
+                    <div class="content">
+                        <div>
+        
+                            <h2>Welcome to Consetetur Forest</h2>
+                            <a href="#tour" class="btn">Book a tour!</a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+            </section>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+    </div>
+
+    <div id="tour" class="tour">
+        <div class="changeTour">
+            <ul class="changePlace">
+                <li onclick="change(0)" class="placeName active">USA</li>
+                <li class="placeName" onclick="change(1)">Japan</li>
+                <li onclick="change(2)" class="placeName">Brasil</li>
+            </ul>
+            <h3>Featured Tour</h3>
+        </div>
+        <div class="tourSlides">
+            <div class="tourSlide" style="background-image: url(./img/tour.jpeg);">
+                <div class="overlay"></div>
+                <div class=" firstRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/us1.jpeg');">
+                        <div class="content">
+                            <h3>Redwood National Park</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/usa2.jpeg');">
+                        <div class="content">
+                            <h3>Hobbit Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/usa3.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/usa4.jpeg');">
+                        <div class="content">
+                            <h3>Hobbit Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/usa5.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="thirdRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/usa6.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="tourSlide" style="background-image: url(./img/japan.jpeg);">
+                <div class="overlay"></div>
+                <div class=" firstRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/japan1.jpeg');">
+                        <div class="content">
+                            <h3>Redwood National Park</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/japan2.jpeg');">
+                        <div class="content">
+                            <h3>Hobbit Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/japan3.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/japan4.jpeg');">
+                        <div class="content">
+                            <h3>Hobbit Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/japan5.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="thirdRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/japan6.jpg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="tourSlide" style="background-image: url(./img/brasil.png);">
+                <div class="overlay"></div>
+                <div class=" firstRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/brasi1.jpeg');">
+                        <div class="content">
+                            <h3>Redwood National Park</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/brasi2.jpeg');">
+                        <div class="content">
+                            <h3>Hobbit Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/brasi3.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/brasi4.jpeg');">
+                        <div class="content">
+                            <h3>Hobbit Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                
+                    <div class="hexagon" style="background-image: url('./img/brasi5.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="thirdRow hex-container">
+                    <div class="hexagon" style="background-image: url('./img/brasi6.jpeg');">
+                        <div class="content">
+                            <h3>Blue River National Forest</h3>
+                            <button>Book Tour</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="overlay" style="justify-items: center;">
+            <div class="footerHead">
+                <h1>Testimonials</h1>
+                <h4>WHAT OUR COUSTOMERS SAY ABOUT US</h4>
+            </div>
+            <div class="footBody">
+                <div class="feedback">
+                    <div class="">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            nisi voluptate dolor ex fuga reiciendis repudiandae quae sit magni optio. Fuga assumenda dolores neque nulla.
+                        </p>
+                        <h2>Louis Barret</h2>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            nisi voluptate dolor ex fuga reiciendis repudiandae quae sit magni optio. Fuga assumenda dolores neque nulla.
+                        </p>
+                        <h2>Louis Barret</h2>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            nisi voluptate dolor ex fuga reiciendis repudiandae quae sit magni optio. Fuga assumenda dolores neque nulla.
+                        </p>
+                        <h2>Louis Barret</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scrpt.js">
+
+    </script>
+</body>
+</html>

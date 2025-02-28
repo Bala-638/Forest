@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: white;
+    color: black;
+}
+
+
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    width: 300vw; 
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+.home {
+    width: 100vw;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url('./img/forest1.jpeg') center/cover; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+    color: white;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.inner{
+    display: flex;
+}
+.content {
+    /* background-color: aqua; */
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.content div{
+    /* background-color: red; */
+}
+.homeTitle{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+}
+.homeTitle h1{
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.content h1 {
+    font-size: 40px;
+    position:absolute;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    text-align: left;
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content .btn {
+    
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: right;
+}
+
+.content .btn:hover {
+    background: white;
+    color: black;
+}
+.dots{
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: flex;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    background: white;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.6;
+    z-index: 10;
+}
+.dots .active{
+    background-color: rgb(44, 159, 8);
+    z-index: 10 ;
+}
+
+/* =============Tour============== */
+
+.tour{
+    width: 100vw;
+    /* height: 100vh; */
+    overflow: hidden;
+    position: relative;
+}
+.tourSlides{
+    display: flex;
+    width: 300vw;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+.tourSlide{
+    width: 100vw;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url('./img/forest1.jpeg') center/cover; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+    color: white;
+}
+
+.hexagon {
+    width: 190px; 
+    height: 210px; 
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hexagon:hover {
+    transform: scale(1.05);
+    color: transparent;
+}
+.hexagon:hover button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.hex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.firstRow{
+    padding-top: 100px;
+}
+.secondRow{
+    position: absolute;
+    left: 35.6%;
+    top: 38%;
+}
+.thirdRow{
+    position: absolute;
+    left: 42.7%;
+    top: 62%;
+}
+.tourSlide button{
+    color: white;
+    margin: 6px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 3px 1px;
+    width: 80px;
+}
+.changeTour{
+    position: absolute;
+    top: 20px;
+    z-index: 20;
+    padding-left: 60px;
+}
+.changeTour ul{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+}
+.changeTour ul li{
+    list-style-type: none;
+    padding: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.changeTour h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 25px;
+    font-size: 30px;
+}
+.changeTour .active{
+    text-decoration-color: brown;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+}
+
+
+
+/* ==============footer============ */
+
+
+.footer{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/footer.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-items: center;
+}
+
+.footerHead{
+width: 100%;
+height: 30%;
+padding-top: 30px;
+text-align: center;
+}
+.footerHead h1{
+    font-size: 50px;
+}
+.footBody{
+    text-align: center;
+    width: 80%;
+    display: flex;
+}
+.footBody .feedback{
+    padding: 30px;
+}
+.footBody .fa-quote-left{
+    font-size: 100px;
+}
+.footBody h2{
+    cursor: pointer;
+    padding-top: 20px;
+    color: rgb(96, 204, 247);
+    text-shadow: -2px -2px 23px rgba(96,204,247,0.93);
+    
+}
+.feedback p{
+    font-weight: 700;
+    color: rgba(240, 248, 255, 0.74);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
