@@ -57,7 +57,7 @@ header {
 }
 .home {
     width: 100vw;
-    height: 700px;
+/*     height: 700px; */
     background-repeat: no-repeat;
     background-size: cover;
     /* background: url('./img/forest1.jpeg') center/cover; */
