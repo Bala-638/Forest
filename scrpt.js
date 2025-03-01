@@ -17,7 +17,7 @@ function autoChange(){
     changeSlide(defaultNum)
 }
 
-// setInterval(autoChange,2000)
+setInterval(autoChange,2000)
 
 
 
