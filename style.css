@@ -24,6 +24,43 @@ header {
     color: white;
     cursor: pointer;
 }
+.nav2 {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.557);
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    /* border-radius: 10px; */
+}
+
+
+.nav a {
+    margin: 0%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    /* display: block; */
+}
+.hidden {
+    display: none;
+}
+.menu-button {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background: #333;
+    color: white;
+    line-height: 35px;
+    border-radius: 5px;
+}
 
 .nav a {
     margin-left: 50px;
@@ -314,3 +351,209 @@ text-align: center;
     color: rgba(240, 248, 255, 0.74);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+
+/* ========Responsive====== */
+
+
+@media screen and (max-width: 413px) {
+
+    
+    .menu-button {
+        display: block;
+    }
+    /* .homeTitle h1{
+        font-size: 24px;
+    }
+    .content h2{
+        font-size: 30px;
+    } */
+    .nav{
+        display: none;
+    }
+    /* Toggle Nav */
+    #nav-toggle:checked + .menu-button + .nav2 {
+        display: flex;
+    }
+    .nav2 a {
+        margin: 0%;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+
+
+    /* ========slider======= */
+    .slider{
+        display: block;
+    }
+    .home .inner{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content{
+        height: 30%;
+    }
+    .homeTitle{
+        height: 40%;
+        margin-top: 80px;
+    }
+    .homeTitle h1{
+        /* font-size:60px !important; */
+    }
+
+
+/* ==========Tour====== */
+    .tour{
+        display: block;
+    }
+    .tourSlide{
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .changeTour{
+        padding-left: 20px;
+    }
+    .changeTour h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .firstRow{
+        /* margin-top: 100px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .thirdRow{
+        display: none;
+    }
+    .secondRow{
+        display: none;
+    }
+
+  
+
+
+
+
+
+
+
+
+    .footer{
+        display: block;
+        height: 120vh;
+    }
+    .footerHead{
+        height: 15%;
+    }
+    .footBody{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+  }
+@media screen and (max-width: 680px) {
+
+    
+    .menu-button {
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    /* Toggle Nav */
+    #nav-toggle:checked + .menu-button + .nav2 {
+        display: flex;
+    }
+    .nav2 a {
+        margin: 0%;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+
+
+    /* ========slider======= */
+    .slider{
+        display: block;
+    }
+    .home .inner{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content{
+        height: 30%;
+    }
+    .homeTitle{
+        height: 40%;
+        margin-top: 80px;
+    }
+    .homeTitle h1{
+        /* font-size:60px !important; */
+    }
+
+
+/* ==========Tour====== */
+    .tour{
+        display: block;
+    }
+    .tourSlide{
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .changeTour{
+        padding-left: 20px;
+    }
+    .changeTour h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .firstRow{
+        /* margin-top: 100px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .thirdRow{
+        display: none;
+    }
+    .secondRow{
+        display: none;
+    }
+
+  
+
+
+
+
+
+
+
+
+    .footer{
+        display: block;
+        height: 150vh;
+    }
+    .footerHead{
+        height: 15%;
+    }
+    .footBody{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+  }

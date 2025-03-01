@@ -17,7 +17,7 @@ function autoChange(){
     changeSlide(defaultNum)
 }
 
-setInterval(autoChange,2000)
+// setInterval(autoChange,2000)
 
 
 
@@ -34,3 +34,11 @@ function change(num){
     line[num].classList.add('active')
 
 }
+
+
+// ===========Responsive======
+
+// const head = document.querySelector('.head')
+// function changeSize() {
+//     head.style.height    = "200px"
+// }
